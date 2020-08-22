@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classwork 8</title>
+    <h1>Exercise 5</h1>
+</head>
+
+<body>
+    <h2>HTML Form and PHP Script for Reading the Input Variables</h2>
+    <!-- 
+            Create a form and a PHP page to accept the following fields in form of a HTML form and Print them back on the screen.
+            Input text fields – Name, Age, Education, contact email, phone, address (multi line)
+            Hint: Use the $_POST to read the values passed form the HTML page to PHP page.  HTML is for input, PHP is for printing.
+        -->
+
+        <form method="post" action="classwork8_ex5.php">
+            Name: <input type="text" name="name" id="name">
+            <br/>
+            Age: <input type="number" name="age" id="age" min="0"> <!-- Age cannot be negative -->
+            <br/>
+            Education: <input type="text" name="edu" id="edu">
+            <br/>
+            Phone: <input type="number" name="phone" id="phone">
+            <br/>
+            Address: <textarea rows="3" cols="5" name="address"> </textarea>
+
+            <br/>
+            <br/>
+            <input type="submit">
+
+
+        </form> 
+
+
+</body>
+
+</html>
